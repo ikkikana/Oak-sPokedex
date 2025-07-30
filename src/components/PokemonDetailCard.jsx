@@ -3,7 +3,7 @@ export default function PokemonDetailCard() {
         <div className="relative">
             <div
                 className="h-[580px] w-full backdrop-blur-md shadow-md p-6 rounded-tr-2xl rounded-br-2xl border-b-4 border-t-4 border-r-4 border-blue-500/10 bg-cover bg-center z-10"
-                style={{backgroundImage: "url('/Image/details.jpg')"}}
+                style={{backgroundImage: "url('../../public/Image/Black.jpg')"}}
             />
 
             <div
