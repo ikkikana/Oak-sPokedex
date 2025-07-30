@@ -1,3 +1,5 @@
+import PokemonListSidebar from "./PokemonListSidebar.jsx";
+
 export default function PokemonDetailCard() {
     return (
         <div className="relative">
@@ -80,4 +82,3 @@ export default function PokemonDetailCard() {
         </div>
     );
 }
-j
