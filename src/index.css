@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.font-pixel { font-family: 'Press Start 2P', monospace; }
+.screen-glow { background: #0f380f; color: #9bbc0f; }
+.dex-body { background: #CC0000; border: 3px solid #990000; }
+/* Google Font pixel — colle aussi dans index.html */
+/* <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.font-pixel {
+    font-family: 'Press Start 2P', monospace;
+}
+
+/* Scrollbar style Game Boy pour la liste */
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: #0f380f;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #9bbc0f;
+    border-radius: 3px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #c6e840;
+}
+
+/* Animation blink LED */
+@keyframes pulse-led {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+}
+.animate-pulse {
+    animation: pulse-led 2s infinite;
+}
+
+/* Caret pixel dans l'input recherche */
+input.font-pixel {
+    caret-color: #9bbc0f;
+}
